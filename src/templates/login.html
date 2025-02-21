@@ -6,9 +6,9 @@
     
     <div class="form-group">
         {{ form.username.label(class="form-label") }}
-        {{ form.username(class="form-control") }}
+        {{ form.email(class="form-control") }}
         
-        {% for error in form.username.errors %}
+        {% for error in form.email.errors %}
         <div class="field text-danger">
             {{ error }}
         </div>
