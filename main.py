@@ -17,7 +17,7 @@ def index():
     return render_template("index.html", products=products)
 
 
-@app.get("/product/")
+@app.get("/product/<id>/")
 def get_product(id):
     product = data_actions.get_product(id)
     return render_template("product.html", product=product)

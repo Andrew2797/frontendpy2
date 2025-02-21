@@ -5,8 +5,9 @@
     {{ form.hidden_tag() }}
     
     <div class="form-group">
-        {{ form.username.label(class="form-label") }}
+        {{ form.email.label(class="form-label") }}
         {{ form.email(class="form-control") }}
+
         
         {% for error in form.email.errors %}
         <div class="field text-danger">
